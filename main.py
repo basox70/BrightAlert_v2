@@ -71,7 +71,7 @@ async def on_message(message):
 			print("Something went wrong! Please restart the setup process.")
 		alert()
 		await message.channel.send(file=discord.File('img/scanned_notifs.png'))
-		# os.remove('img/scanned_notifs.png')
+		os.remove('img/scanned_notifs.png')
 	elif "!setup" not in message.content or len(message.content.split()) != 3 :
 		message.channel.send("```The message format is incorrect```.")
 

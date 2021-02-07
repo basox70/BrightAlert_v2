@@ -2,7 +2,7 @@
 You don't need to install the github repo. You can just join our server in order to DM the bot
 link: https://discord.gg/ACXtYNnH
 
-Then in your DM use the command: '!setup <email> <password>'
+Then in your DM use the command: "!setup <email> <password>"
 
 ## Inspiration
 We observed that the majority of software engineering students use discord as a way to communicate with other students regarding their online courses. Thus, we created a discord bot that can be installed on a server or accessed through dm's that after a simple one-command setup process sends you updates from your BrightSpace account.

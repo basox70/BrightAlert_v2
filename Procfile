@@ -1,1 +1,1 @@
-ECHO is on.
+web: python main.py

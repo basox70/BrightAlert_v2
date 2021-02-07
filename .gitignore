@@ -1,2 +1,4 @@
 img/
 gui.py
+keys.py
+./_pycache_/

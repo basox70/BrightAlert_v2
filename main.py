@@ -1,13 +1,13 @@
 import discord
 #from bs4 import BeautifulSoup
+import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 #import datetime
 import time
 #import requests
 import pyautogui
-
-token = 'ODA3NzA0MDYyMzg3OTQ1NTI0.YB73Bg.vbznQdeOwlfxLJBmdWKIFUa9Lj0'
+from keys import *
 
 client = discord.Client()
 
@@ -47,9 +47,7 @@ def alert():
 	time.sleep(2)
 	pyautogui.click('bell.png')
 	coords = pyautogui.locateOnScreen('scan.png')
-	pyautogui.screenshot('img/scan1.png', region = coords)
-
-
+	pyautogui.screenshot('img/scanned_notifs.png', region = coords)
 
 
 
@@ -67,6 +65,8 @@ async def on_message(message):
 		except:
 			print("Something went wrong! Please restart the setup process.")
 		alert()
+		await message.channel.send(file=discord.File('img/scanned_notifs.png'))
+		# os.remove('img/scanned_notifs.png')
 	elif "!setup" not in message.content or len(message.content.split()) != 3 :
 		message.channel.send("```The message format is incorrect```.")
 

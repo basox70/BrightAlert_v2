@@ -46,8 +46,13 @@ def alert():
 	global driver
 	time.sleep(2)
 	pyautogui.click('bell.png')
-	coords = pyautogui.locateOnScreen('scan.png')
-	pyautogui.screenshot('img/scanned_notifs.png', region = coords)
+	l = True
+	while l:
+		coords = pyautogui.locateOnScreen('scan.png', confidence = 0.5)
+		if coords != None:
+			print(coords)
+			pyautogui.screenshot('img/scanned_notifs.png', region = coords)
+			l = False
 
 
 

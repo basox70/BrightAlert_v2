@@ -43,7 +43,13 @@ def login(email, password, condition):
 def alert():
 	global driver
 	time.sleep(2)
-	pyautogui.click('bell.png')
+	x = True
+	while x:
+		try:
+			pyautogui.click('bell.png')
+			x = False
+		except:
+			pass
 	l = True
 	while l:
 		coords = pyautogui.locateOnScreen('scan.png', confidence = 0.5)

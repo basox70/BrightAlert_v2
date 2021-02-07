@@ -1,4 +1,3 @@
-img/
-gui.py
+/img/
 keys.py
-./_pycache_/
+/_pycache_/

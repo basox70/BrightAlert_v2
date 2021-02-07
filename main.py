@@ -80,7 +80,7 @@ async def on_message(message):
 		os.remove('img/scanned_notifs.png')
 		driver.close()
 	elif "!setup" not in message.content or len(message.content.split()) != 3 :
-		message.channel.send("```The message format is incorrect```.")
+		await message.channel.send("```The message format is incorrect```.")
 
 	if cond2 == False:
 		await message.channel.send(f"{message.author.mention} You have not authenticated in time! Please restart the process.")

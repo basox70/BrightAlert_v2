@@ -1,5 +1,9 @@
-/img/
+.vscode
+.venv
+*.pyc
+*.log*
+__pycache__
+db_lsd_*
+config.yml
 
-keys.py
-
-/__pycache__
+/img

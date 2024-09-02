@@ -1,0 +1,10 @@
+# Bot configuration
+bot_name: !!str your_bot_name
+token: !!str yourToken
+prefix: !!str '!' # default prefix
+
+# Log configuration
+log:
+  debug_level: DEBUG # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  max_bytes: 100000 # max size of log file (in octet)
+  backup_count: 5 # number of backup log file

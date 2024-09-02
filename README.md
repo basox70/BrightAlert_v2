@@ -1,5 +1,6 @@
 ## How to Use (No installation)
 :warning: ONLY available if bot is online
+
 You don't need to install the github repo. You can just join the server in order to DM the bot
 link: https://discord.gg/mUpBKVZnYh (DM me on discord if link is down)
 

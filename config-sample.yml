@@ -1,5 +1,4 @@
 # Bot configuration
-bot_name: !!str your_bot_name
 token: !!str yourToken
 prefix: !!str '!' # default prefix
 

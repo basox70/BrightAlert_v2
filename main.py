@@ -4,7 +4,7 @@ from discord.flags import Intents
 
 import os
 
-from selenium import webdriver
+from selenium.webdriver import Chrome, Edge, Firefox, ChromiumEdge, Ie
 from selenium.webdriver.common.keys import Keys
 import time
 import pyautogui
@@ -78,9 +78,9 @@ async def on_message(message):
     # Ignore if message is from a bot or himself
     if message.author == client.user or message.author.bot:
         return
-    if "!setup" in message.content[0:5] and len(message.content.split()) == 3 :
+    if "!setup" in message.content[0:6] and len(message.content.split()) == 3 :
         global driver
-        driver = webdriver.Firefox()
+        driver = ChromiumEdge()
         splitted_message = message.content.split()
         username = splitted_message[1]
         password = splitted_message[2]

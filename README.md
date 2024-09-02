@@ -1,26 +1,26 @@
-## How to Use
-You don't need to install the github repo. You can just join our server in order to DM the bot
-link: https://discord.gg/ACXtYNnH
+## How to Use (No installation)
+:warning: ONLY available if bot is online
+You don't need to install the github repo. You can just join the server in order to DM the bot
+link: https://discord.gg/mUpBKVZnYh (DM me on discord if link is down)
 
 Then in your DM use the command: "!setup (email) (password)"
 
-## Inspiration
-We observed that the majority of software engineering students use discord as a way to communicate with other students regarding their online courses. Thus, we created a discord bot that can be installed on a server or accessed through dm's that after a simple one-command setup process sends you updates from your BrightSpace account.
+## How to Use (Local installation)
 
-## What it does
-We made a discord bot that notifies students in their discord DM on their recent notifications that they've got on BrightSpace.
+### Prerequisite
+- [Python](https://www.python.org/) installed (version 3.12 is used for development)
+- venv is recommened [docs](https://docs.python.org/3.9/library/venv.html)
+- Have a discord bot available : https://discord.com/developers/applications
 
-## How we built it
-We built it using discord.py and pyautogui as well as selenium webdriver
+### Installation
+- Download github folder
+- Run cmd and move to the extracted folder
+- [Optionnal] Create venv
+- Install the requirements : `py -m pip install -r requirements.txt`
+- If needed replace browser in `main.py` line 83 (default : ChromiumEdge)(Available : Chrome, Edge, Firefox, ChromiumEdge, Ie)
+- [Mandatory] Copy `config-sample.yml` to `config.yml` and update the token with the one you have
+- In the cmd, run `py main.py`
+- Use `ctrl-C` to stop the bot
 
-## Challenges we ran into
-Due to some students having two-factor authentication, it was troublesome for us to detect who had it and give them enough time to authenticate using their phone. Another problem we ran into is the fact that BrightSpace was difficult to navigate using chrome's inspect function. Many buttons had no IDs and shared classes which caused troubles for us.
-
-## Accomplishments that we're proud of
-We were able to make the bot communicate with a user through DM without exposing or keeping the user's information. We were also able to locate the notifications on the page and send them through DM by taking a screenshot.
-
-## What we learned
-We expanded our knowledge by learning new modules; such as pyautogui, selenium, and discord.py
-
-## What's next for BrightAlert
-We will try to advertise BrightAlert to students as we believe this bot could be of huge convenience to them.
+## What's next for BrightAlert_v2
+Feel free to contact me if you want to help in this project
